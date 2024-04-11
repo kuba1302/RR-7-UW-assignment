@@ -1,0 +1,290 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={R Markdown Example},
+  pdfauthor={Jakub Wujec},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{R Markdown Example}
+\author{Jakub Wujec}
+\date{11/04/2024}
+
+\begin{document}
+\maketitle
+
+\hypertarget{combined-r-markdown-example}{%
+\section{Combined R Markdown
+Example}\label{combined-r-markdown-example}}
+
+This is a simple R Markdown document with code chunks and a plot
+included.
+
+Use \texttt{Ctrl+Alt+I} to create new code chunk
+
+\hypertarget{r-code-chunk-with-plot}{%
+\subsection{R Code Chunk with Plot}\label{r-code-chunk-with-plot}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Generate some random data}
+\FunctionTok{set.seed}\NormalTok{(}\DecValTok{123}\NormalTok{)}
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{100}\NormalTok{)}
+
+\CommentTok{\# Summary statistics}
+\FunctionTok{summary}\NormalTok{(x)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+## -2.30917 -0.49385  0.06176  0.09041  0.69182  2.18733
+\end{verbatim}
+
+\hypertarget{plot-histogram}{%
+\subsection{Plot histogram}\label{plot-histogram}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{hist}\NormalTok{(x, }\AttributeTok{main =} \StringTok{"Histogram of Random Data"}\NormalTok{, }\AttributeTok{xlab =} \StringTok{"Value"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{RR_7_markdown_files/figure-latex/unnamed-chunk-2-1.pdf}
+
+\hypertarget{loading-and-exploring-data}{%
+\subsection{Loading and Exploring
+Data}\label{loading-and-exploring-data}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Load a sample dataset}
+\FunctionTok{data}\NormalTok{(iris)}
+
+\CommentTok{\# View the first few rows of the dataset}
+\FunctionTok{head}\NormalTok{(iris)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+## 6          5.4         3.9          1.7         0.4  setosa
+\end{verbatim}
+
+\hypertarget{data-visualization}{%
+\subsection{Data visualization}\label{data-visualization}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Scatter plot of iris dataset}
+\FunctionTok{plot}\NormalTok{(iris}\SpecialCharTok{$}\NormalTok{Sepal.Length, iris}\SpecialCharTok{$}\NormalTok{Sepal.Width, }
+     \AttributeTok{main =} \StringTok{"Sepal Length vs. Sepal Width"}\NormalTok{,}
+     \AttributeTok{xlab =} \StringTok{"Sepal Length"}\NormalTok{, }\AttributeTok{ylab =} \StringTok{"Sepal Width"}\NormalTok{, }
+     \AttributeTok{col =}\NormalTok{ iris}\SpecialCharTok{$}\NormalTok{Species)}
+\FunctionTok{legend}\NormalTok{(}\StringTok{"topright"}\NormalTok{, }\AttributeTok{legend =} \FunctionTok{levels}\NormalTok{(iris}\SpecialCharTok{$}\NormalTok{Species), }\AttributeTok{col =} \DecValTok{1}\SpecialCharTok{:}\DecValTok{3}\NormalTok{, }\AttributeTok{pch =} \DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{RR_7_markdown_files/figure-latex/unnamed-chunk-4-1.pdf}
+
+\hypertarget{linear-regression}{%
+\subsection{Linear Regression}\label{linear-regression}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Fit a linear regression model}
+\NormalTok{lm\_model }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(Petal.Width }\SpecialCharTok{\textasciitilde{}}\NormalTok{ Petal.Length, }\AttributeTok{data =}\NormalTok{ iris)}
+
+\CommentTok{\# Summary of the model}
+\FunctionTok{summary}\NormalTok{(lm\_model)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = Petal.Width ~ Petal.Length, data = iris)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -0.56515 -0.12358 -0.01898  0.13288  0.64272 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  -0.363076   0.039762  -9.131  4.7e-16 ***
+## Petal.Length  0.415755   0.009582  43.387  < 2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.2065 on 148 degrees of freedom
+## Multiple R-squared:  0.9271, Adjusted R-squared:  0.9266 
+## F-statistic:  1882 on 1 and 148 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Plot the regression line}
+\FunctionTok{plot}\NormalTok{(iris}\SpecialCharTok{$}\NormalTok{Petal.Length, iris}\SpecialCharTok{$}\NormalTok{Petal.Width, }
+     \AttributeTok{main =} \StringTok{"Petal Width vs. Petal Length with Regression Line"}\NormalTok{,}
+     \AttributeTok{xlab =} \StringTok{"Petal Length"}\NormalTok{, }\AttributeTok{ylab =} \StringTok{"Petal Width"}\NormalTok{)}
+\FunctionTok{abline}\NormalTok{(lm\_model, }\AttributeTok{col =} \StringTok{"red"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{RR_7_markdown_files/figure-latex/unnamed-chunk-5-1.pdf}
+
+\hypertarget{interactive-plot-using-plotly}{%
+\subsection{Interactive Plot (Using
+Plotly)}\label{interactive-plot-using-plotly}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Load the plotly library}
+\FunctionTok{library}\NormalTok{(plotly)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Loading required package: ggplot2
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Attaching package: 'plotly'
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:ggplot2':
+## 
+##     last_plot
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:stats':
+## 
+##     filter
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:graphics':
+## 
+##     layout
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Scatter plot using plotly}
+\FunctionTok{plot\_ly}\NormalTok{(iris, }\AttributeTok{x =} \SpecialCharTok{\textasciitilde{}}\NormalTok{Petal.Length, }\AttributeTok{y =} \SpecialCharTok{\textasciitilde{}}\NormalTok{Petal.Width, }\AttributeTok{color =} \SpecialCharTok{\textasciitilde{}}\NormalTok{Species,}
+        \AttributeTok{type =} \StringTok{\textquotesingle{}scatter\textquotesingle{}}\NormalTok{, }\AttributeTok{mode =} \StringTok{\textquotesingle{}markers\textquotesingle{}}\NormalTok{, }
+        \AttributeTok{marker =} \FunctionTok{list}\NormalTok{(}\AttributeTok{size =} \DecValTok{10}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{layout}\NormalTok{(}\AttributeTok{title =} \StringTok{"Interactive Scatter Plot: Petal Width vs. Petal Length"}\NormalTok{,}
+         \AttributeTok{xaxis =} \FunctionTok{list}\NormalTok{(}\AttributeTok{title =} \StringTok{"Petal Length"}\NormalTok{),}
+         \AttributeTok{yaxis =} \FunctionTok{list}\NormalTok{(}\AttributeTok{title =} \StringTok{"Petal Width"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{RR_7_markdown_files/figure-latex/unnamed-chunk-6-1.pdf}
+
+\end{document}
